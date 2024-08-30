@@ -1,12 +1,13 @@
 import os
 from dotenv import load_dotenv
-from bson import ObjectId
+from bson.objectid import ObjectId
 from fastapi import FastAPI, HTTPException
 from pymongo import MongoClient
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
+
 
 # Load environment variables
 load_dotenv()
